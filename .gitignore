@@ -1,0 +1,42 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+vendor/
+
+# Build files
+dist/
+build/
+out/
+*.o
+*.so
+*.a
+*.d
+
+# Compiled source
+*.class
+*.dll
+*.exe
+*.jar
+*.war
+
+# IDE and editor specific
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Python specific
+__pycache__/
+*.py[c
