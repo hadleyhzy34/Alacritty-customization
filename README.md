@@ -4,8 +4,6 @@ my personal Alacritty customization
 
 # Installation
 
----
-
 [Downlink](https://alacritty.org)
 
 Alacritty can be installed by using various package managers on Linux, BSD, macOS and Windows.
@@ -15,8 +13,6 @@ Prebuilt binaries for macOS and Windows can also be downloaded from the GitHub r
 For everyone else, the detailed instructions to install Alacritty can be found here.
 
 # configuration
-
----
 
 ## prepare config file
 
