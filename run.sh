@@ -15,6 +15,7 @@ sudo make install
 # install curl
 sudo apt-get install curl wget
 # install cargo
+cd ~/Downloads
 curl https://sh.rustup.rs -sSf | sh
 # install node
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
@@ -34,7 +35,7 @@ unzip FiraCode
 fc-cache -fv
 # install alacritty
 cargo install alacritty
-cd ~/Developments/
+cd ~/Developments
 git clone https://github.com/hadleyhzy34/Alacritty-customization.git
 cd Alacritty-customization
 mkdir -p ~/.config/alacritty
