@@ -1,13 +1,14 @@
 sudo apt-get update
 # install gcc
+sudo apt-get install ninja-build gettext cmake unzip curl build-essential
 sudo apt-get install gcc-12
 sudo rm -rf ~/usr/bin/gcc
 sudo ln -s /usr/bin/gcc-12 /usr/bin/gcc
+sudo apt install libstdc++-12-dev
 cd ~
 mkdir Developments
 cd Developments
 # install neovim
-sudo apt-get install ninja-build gettext cmake unzip curl build-essential
 git clone https://github.com/neovim/neovim
 git checkout stable
 cd neovim && make CMAKE_BUILD_TYPE=Release
