@@ -40,6 +40,11 @@ git clone https://github.com/hadleyhzy34/Alacritty-customization.git
 cd Alacritty-customization
 mkdir -p ~/.config/alacritty
 cp ~/Alacritty-customization/alacritty.toml ~/.config/alacritty/.
+sudo mv alacritty.desktop /usr/share/applications/alacritty.desktop
+sudo chmod +x /usr/share/applications/alacritty.desktop
+wget https://raw.githubusercontent.com/alacritty/alacritty/master/extra/logo/alacritty-term.svg -O alacritty.svg
+mkdir -p /usr/share/pixmaps
+sudo mv alacritty.svg /usr/share/pixmaps/alacritty.svg
 # We use Alacritty's default Linux config directory as our storage location here.
 mkdir -p ~/.config/alacritty/themes
 git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
