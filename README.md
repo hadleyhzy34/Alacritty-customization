@@ -76,8 +76,6 @@ vim.api.nvim_create_autocmd("ExitPre", {
 
 [theme-link](https://github.com/alacritty/alacritty-theme)
 
-### Imports
-
 Clone the repository, or download the theme of your choice:
 
 ```shell
