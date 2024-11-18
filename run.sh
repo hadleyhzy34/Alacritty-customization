@@ -1,6 +1,6 @@
 sudo apt-get update
 # install gcc
-sudo apt-get install ninja-build gettext cmake unzip curl build-essential
+sudo apt-get install ninja-build gettext cmake unzip curl build-essential libfontconfig1-dev
 sudo apt-get install gcc-12
 sudo rm -rf ~/usr/bin/gcc
 sudo ln -s /usr/bin/gcc-12 /usr/bin/gcc
@@ -19,7 +19,8 @@ sudo apt-get install curl wget
 cd ~/Downloads
 curl https://sh.rustup.rs -sSf | sh
 # install node
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+# curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 source ~/.bashrc
 nvm install v20.18.0
 # install lazyvim
@@ -36,11 +37,12 @@ unzip FiraCode
 fc-cache -fv
 # install alacritty
 cargo install alacritty
+. "$HOME/.cargo/env"
 cd ~/Developments
 git clone https://github.com/hadleyhzy34/Alacritty-customization.git
 cd Alacritty-customization
 mkdir -p ~/.config/alacritty
-cp ~/Alacritty-customization/alacritty.toml ~/.config/alacritty/.
+cp ~/Developments/Alacritty-customization/alacritty.toml ~/.config/alacritty/.
 sudo mv alacritty.desktop /usr/share/applications/alacritty.desktop
 sudo chmod +x /usr/share/applications/alacritty.desktop
 wget https://raw.githubusercontent.com/alacritty/alacritty/master/extra/logo/alacritty-term.svg -O alacritty.svg

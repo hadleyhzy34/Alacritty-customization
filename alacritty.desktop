@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Alacritty
-Comment=Alacritty Terminal Emulator
-Exec=/home/hadley/.cargo/bin/alacritty
-Icon=alacritty
-Type=Application
-Categories=System;TerminalEmulator;
-
